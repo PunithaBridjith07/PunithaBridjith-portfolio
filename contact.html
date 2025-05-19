@@ -1,25 +1,42 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Punitha Bridjith</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact - Punitha Bridjith A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <nav class="bg-purple-200 shadow-md p-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-purple-700">Punitha Bridjith A</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-purple-600">Home</a>
+      <a href="about.html" class="hover:text-purple-600">About</a>
+      <a href="projects.html" class="hover:text-purple-600">Projects</a>
+      <a href="contact.html" class="hover:text-purple-600">Contact</a>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Contact Me</h1>
-    <p>Email: <a href="mailto:bridjith07@gmail.com">bridjith07@gmail.com</a></p>
-    <p>Phone: 9655583826</p>
-    <p>Location: Tamil Nadu, India</p>
-  </div>
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-purple-700 mb-6">Get in Touch</h2>
+    <p class="mb-6">I'm always open to new opportunities, collaborations, and professional networking. Whether you're looking to build something impactful or want to learn together — feel free to connect with me.</p>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded">
+      <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded">
+      <textarea placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded" rows="6"></textarea>
+      <button type="submit" class="bg-purple-700 text-white px-6 py-2 rounded hover:bg-purple-800">Send Message</button>
+    </form>
+    <div class="mt-10 space-y-2">
+      <p><strong>Email:</strong> punithabridjith@email.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/punithabridjith" class="text-purple-700 underline">linkedin.com/in/punithabridjith</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/punithabridjith" class="text-purple-700 underline">github.com/punithabridjith</a></p>
+      <p><strong>Location:</strong> Tamil Nadu, India</p>
+    </div>
+  </section>
 
-  <footer>&copy; 2025 Punitha Bridjith A</footer>
+  <footer class="bg-purple-700 text-white text-center py-4">
+    &copy; 2025 Punitha Bridjith A
+  </footer>
 </body>
 </html>

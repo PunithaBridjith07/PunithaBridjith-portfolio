@@ -1,4 +1,4 @@
-# PunithaBridjith-portfolio
+# Portfolio
 
 # Hi, I'm Punitha Bridjith A
 

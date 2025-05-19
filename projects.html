@@ -1,36 +1,47 @@
+<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects - Punitha Bridjith</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Projects - Punitha Bridjith A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <nav class="bg-purple-200 shadow-md p-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-purple-700">Punitha Bridjith A</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-purple-600">Home</a>
+      <a href="about.html" class="hover:text-purple-600">About</a>
+      <a href="projects.html" class="hover:text-purple-600">Projects</a>
+      <a href="contact.html" class="hover:text-purple-600">Contact</a>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Projects</h1>
-    <ul>
-      <li>
-        <h3>WhatsApp Business Bot</h3>
-        <p>Automated purchasing system using Django & Twilio.</p>
-      </li>
-      <li>
-        <h3>Ticketing System with QR Scanner</h3>
-        <p>Web vulnerability scanner with queuing and QR integration.</p>
-      </li>
-      <li>
-        <h3>Event Booking with QR Codes</h3>
-        <p>QR-based ticket booking and check-in using MEAN stack.</p>
-      </li>
-    </ul>
-  </div>
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-purple-700 mb-8">Featured Projects</h2>
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-xl font-semibold">📄 Document Scanner with Subscription</h3>
+        <p>A web-based document scanner that provides a 24-hour free trial for new users and then enforces a subscription-based access model. Features include image capture, PDF conversion, and camera/file upload protection. Built using React.js for the frontend and Django for the backend with PostgreSQL as the database.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">🧠 Smart Online Note-Making App</h3>
+        <p>A smart note-taking application integrated with Google Search API, allowing users to gather web-based insights while taking notes. Features a dual-pane interface with to-do list support, all powered by React.js and Django.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">🎟️ QR-Based Event Booking System</h3>
+        <p>An event ticketing system that supports both audience and organizers. Users can select events, seats, and receive QR code-based tickets. Organizers can register events through subscription plans, with email verification and CouchDB integration. Built using Angular, Node.js, and CouchDB.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">🛍️ WhatsApp Business Product Bot</h3>
+        <p>Internship project for listing products dynamically from a PostgreSQL database using Django Admin, integrated with WhatsApp API. Supported CRUD operations for real-time updates and product retrieval in a conversational format.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>&copy; 2025 Punitha Bridjith A</footer>
+  <footer class="bg-purple-700 text-white text-center py-4">
+    &copy; 2025 Punitha Bridjith A
+  </footer>
 </body>
 </html>

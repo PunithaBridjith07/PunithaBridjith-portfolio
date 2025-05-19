@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: #f0f2f5;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* Navigation */
+nav {
+  background: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #00b7ff;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #00567e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Section List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f9fbfd;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #00b7ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
